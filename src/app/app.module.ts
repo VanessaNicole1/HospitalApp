@@ -12,9 +12,15 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
 
 /**
- * Modulos: Los Module van en los imports.
+ * Modulos: Todos los Modules van en los imports.
  */
 import { PagesModule } from './pages/pages.module';
+
+/**
+ * Servicios
+ */
+import { ServiceModule } from './services/service.module';
+
 
 
 
@@ -25,16 +31,13 @@ import { PagesModule } from './pages/pages.module';
     AppComponent,
     LoginComponent,
     RegisterComponent
-    
-    
-    
-    
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

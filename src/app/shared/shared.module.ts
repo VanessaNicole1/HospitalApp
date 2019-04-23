@@ -1,5 +1,13 @@
 import { NgModule } from "@angular/core";
 /**
+ * EL commonModule viene con el uso de directivas (ngIf, ngFor)
+ * Pipes
+ */
+import {CommonModule} from '@angular/common';
+
+
+import { RouterModule } from '@angular/router';
+/**
  * Componentes
  */
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -9,6 +17,10 @@ import { NopagesfoundComponent } from './nopagesfound/nopagesfound.component';
 
 @NgModule({
 
+    imports: [
+        RouterModule,
+        CommonModule
+    ],
     declarations: [
         BreadcrumbsComponent,
         HeaderComponent,
